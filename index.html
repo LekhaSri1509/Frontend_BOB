@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="data.js"></script>
+    <style>
+        body{
+           background-color: azure;
+            
+        }
+        #users{
+            background-color: #BCDFF9;
+            height: 700px;
+            width: 400px;
+            color: white;
+            float: left;
+            overflow: scroll;
+            margin-right: -200px;
+            border-top-left-radius: 20px;
+            border-bottom-left-radius: 20px;
+            margin-left: 50px;
+        }
+        #oneuser{
+            height: 700px;
+            overflow: scroll;
+            width: 500px;
+            background-color: #CBF4D4;
+            border-top-left-radius: 20px;
+            border-bottom-left-radius: 20px;
+            padding-top: 20px;
+            
+
+        }
+ 
+
+
+
+        #mainuser{
+            float: left;
+            position: relative;
+            right: -230px;
+        }
+        #createpost{
+            height: 500px;
+            background-color: #FEE0E0;
+            width: 490px;
+            float: right;
+            position: relative;
+            left: 100px;
+            letter-spacing: normal;
+            border-radius: 20px;
+            display: none;
+          
+        }
+        #tit{
+            border: none;
+            height: 40px;
+            width: 400px;
+            margin-left: 30px;
+            margin-top: 20px;
+            border-radius: 10px;
+        }
+       
+        .post{
+             position: relative;
+             left: 30px;
+             top: 10px;
+             font-weight: 300;
+        }
+        #content{
+            border: none;
+            position: relative;
+            top: 20px;
+            border-radius: 10px;
+            height: 200px;
+            width: 400px;
+            left: 30px;
+        }
+        button{
+            background-color: #e42575;
+            color: white;
+            border: none;
+            position: relative;
+            top: 80px;
+            right: 30px;
+            height: 30px;
+            width: 60px;
+            border-radius: 10px;
+            font-family: calibri;
+            letter-spacing: 2px;
+        }
+        #creat{
+            background-color:#e42575;
+            height: 25px;
+            padding-top: 6px;
+            width: 130px;
+            font-family: calibri;
+            letter-spacing: 2px;
+            border-radius: 10px;
+            color: white;
+            text-align: center;
+            float: right;
+            position: relative;
+            bottom:55px;
+            right: 40px;
+            cursor: pointer;
+        }
+        #usercreation{
+            height: 500px;
+            background-color: #BCDFF9;
+            width: 500px;
+            margin-left: 470px;
+            border-radius: 20px;
+            font-weight: 300;
+            transition: 0.5s;
+            display: none;
+            border: 5px solid gray;
+           
+        }
+       
+       
+        .createtitle{
+            padding-top: 60px;
+            position: relative;
+            right: 80px;
+            font-weight: 300;
+            
+        }
+        #form1{
+            position: relative;
+            right: -100px;
+            bottom: 550px;
+            width: 320px;
+        }
+        .name1{
+            border: none;
+            height: 30px;
+            border-radius: 10px;
+            margin-left: 50px;
+            width: 190px;
+        }
+        #name1::placeholder{
+            text-align: center;
+        }
+        .back{
+            height: 30px;
+            background-color:#e42575;
+            width:40px;
+            border-radius: 45%;;
+            cursor: pointer;
+        }
+        #header{
+            background-color: rgb(142, 142, 142);
+            margin: 0;
+            padding: 10px;
+            width: 100%;
+            position: relative;
+            bottom: 20px;
+            right:7px;
+            color: white;
+            height: 50px;
+        }
+        
+    </style>
+</head>
+<body>
+    <div id="header">
+        <h2 style="margin-left:65px;">POST MANAGER</h2>
+        <div id="creat" onclick="focus1();">
+       CREATE USER
+    </div>
+        
+    </div>
+    <div id="users">
+        <h3 style="padding-top: 20px; padding-left: 30px; color: black; font-weight: 500;">USERS</h3>
+    </div>
+    <div id="mainuser">
+       
+    <div id="oneuser">
+        
+    </div>
+</div>
+<div id="createpost">
+    <h3 class="post">CREATE NEW POST</h3>
+    <input id="tit" type="text" placeholder="Enter a Title">
+    <textarea id="content" placeholder="Enter the content"></textarea>
+    <button onclick="newpost();">SAVE</button>
+
+</div>
+
+<div id="usercreation">
+    
+     <div class="back" onclick="clr1()">
+            
+     </div>
+
+       <h3 class="createtitle">CREATE NEW USER</h3>
+    <div id="form1">
+        Name: <input id='name2' class='name1' type="text" placeholder="Enter name">
+        <br><br><br>
+        Avatar Link: <input id='avatar' class='name1' type="text" placeholder="Enter Avatar Link">
+        <br><br><br>
+        <button style="margin-left: 150px;" onclick="save();">CREATE USER</button>
+    
+</div>
+</div>
+
+  
+</body>
+</html>
